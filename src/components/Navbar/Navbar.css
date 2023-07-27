@@ -1,7 +1,12 @@
 .navbar {
     background-color: rgb(83, 84, 85);
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
+  
   
   .navbar ul {
     list-style-type: none;
@@ -17,4 +22,3 @@
     text-decoration: none;
     color: white;
   }
-
