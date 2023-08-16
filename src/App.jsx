@@ -1,9 +1,10 @@
-// import React, { useEffect, useState } from 'react';
-// import Lista from './components/contenedor/ItemListContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Detail from './Pages/Detail';
+import About from './Pages/About';
+// import About from './Pages/carrito';
+
 import Navbar from './components/Navbar/Navbar'
 
 import './App.css'
@@ -13,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <main id=''>
+      <main id='contenedorPrincipal'>
         <Routes>
           <Route
             exact
@@ -24,6 +25,14 @@ function App() {
             path='producto/:id'
             element={<Detail/>}
           />
+          <Route
+            path='about'
+            element={<About/>}
+          />
+          {/* <Route
+            path='carrito'
+            element={<carrito/>}
+          /> */}
         </Routes>
       </main>
     </BrowserRouter>

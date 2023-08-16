@@ -1,0 +1,9 @@
+.contenedorProducto{
+    border: solid 3px black;
+    max-width: 300px;
+    height:auto;
+    padding: 25px;
+
+}
+.linkDetalle{
+}

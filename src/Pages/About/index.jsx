@@ -1,0 +1,5 @@
+function About (){
+    return("React, una biblioteca JavaScript de código abierto desarrollada por Facebook, ha revolucionado la forma en que construimos aplicaciones web. Su enfoque en la creación de interfaces de usuario interactivas y eficientes ha ganado una amplia adopción en la comunidad de desarrollo. Basado en componentes reutilizables, React permite construir interfaces complejas dividiéndolas en partes más pequeñas y manejables. La arquitectura unidireccional de datos y la actualización virtual del DOM optimizan el rendimiento al minimizar los cambios directos en la estructura del DOM. React también se integra sin problemas con herramientas y bibliotecas externas, lo que lo hace altamente versátil. Además, la introducción de React Native ha extendido su poder a la creación de aplicaciones móviles multiplataforma con una base de código compartido. Aunque la curva de aprendizaje inicial puede ser pronunciada, los beneficios a largo plazo en términos de rendimiento, mantenibilidad y escalabilidad hacen de React una opción valiosa para el desarrollo moderno de aplicaciones.")
+}
+
+export default About;

@@ -7,7 +7,7 @@ function Detail () {
   console.log('id:', id)
 
   useEffect(() => {
-    fetch(`'https://fakestoreapi.com/products/${id}`)
+    fetch(`https://fakestoreapi.com/products/${id}`)
       .then((res) => res.json())
       .then((res) => {
         setProducto(res)
@@ -16,9 +16,13 @@ function Detail () {
 
   return (
     <>
-      <h1>{producto?.name}</h1>
-      <img src={producto?.image} alt={producto?.name} width={400} height={400}/>
-      
+      <h1>{producto?.title}</h1>
+      <img src={producto?.image} alt={producto?.title} width={200} height={200}/>
+      <div>{producto?.description}</div>
+      <div>$
+      <span>{producto?.price}</span>
+      </div>
+
     </>
   )
 }

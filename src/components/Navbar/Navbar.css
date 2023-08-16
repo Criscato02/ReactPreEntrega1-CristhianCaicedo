@@ -7,6 +7,9 @@
     
   }
   
+  .link {
+    padding-right: 50px;
+  }
   
   .navbar ul {
     list-style-type: none;
