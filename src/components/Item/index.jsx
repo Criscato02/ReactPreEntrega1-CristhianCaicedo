@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {Link} from 'react-router-dom'
+import { cartContext } from "../context/Cart/Provider";
 
 function Item (props) {
+  const { addItem } = useContext(cartContext);
 
   return (
     <div className="contenedorProducto">
@@ -11,6 +13,7 @@ function Item (props) {
       <Link to={`/producto/${props.item.id}`}>
         <div className="linkDetalle">Ver producto</div>
       </Link>
+      <button className="agregarCarrito" onClick={()=> addItem(props.item)}> Agregar al carrito </button>
     </div>
   )
 }

@@ -3,7 +3,13 @@
     max-width: 300px;
     height:auto;
     padding: 25px;
+    display: inline-block;
+    
+}
+.agregarCarrito{
+    color: #224d26;
+    height: 35px;
+    width: 300px;
+    padding: 10px;
+}
 
-}
-.linkDetalle{
-}

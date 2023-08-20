@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
+import { cartContext } from '../context/Cart/Provider';
 
 import './Navbar.css';
 
 function Navbar() {
+  const { productos, quantity } = useContext (cartContext);
+  console.log('productos:', productos)
+
   return (
     <div className="navbar">
       <Link to="/">
@@ -16,12 +21,12 @@ function Navbar() {
       <Link to="/About">
         <span className="link">About</span>
       </Link>
-      <Link to="/Men">
+      {/* <Link to="/Men">
         <span className="link">Men´s Clothing</span>
-      </Link>
+      </Link> */}
       <Link to="/carrito">
         <span className="link">
-          <FaShoppingCart />
+          <FaShoppingCart /> ({quantity})
         </span>
       </Link>
     </div>
