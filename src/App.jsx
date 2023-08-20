@@ -1,4 +1,5 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { initializeApp } from "firebase/app";
 
 import CartProvider from './components/context/Cart/Provider';
 
@@ -9,6 +10,7 @@ import About from './Pages/About';
 import Navbar from './components/Navbar/Navbar'
 
 import './App.css'
+
 
 function App() {
 
